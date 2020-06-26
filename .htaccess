@@ -1,1 +1,1 @@
-RewriteRule ^ - [R=504,L]
+Redirect 200 504
