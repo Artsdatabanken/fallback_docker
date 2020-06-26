@@ -11,4 +11,5 @@ RUN apk upgrade --update \
 WORKDIR /usr/local/apache2/htdocs
 COPY . .
 EXPOSE 3001
+RUN chown www-data:www-data -R /usr/local/apache2/htdocs
 CMD ["httpd-foreground"]
